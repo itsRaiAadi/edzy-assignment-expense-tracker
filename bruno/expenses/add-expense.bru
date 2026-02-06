@@ -1,0 +1,18 @@
+meta {
+  name: Add Expense
+  type: http
+}
+
+post {
+  url: http://localhost:5000/expenses
+}
+
+body {
+  json: {
+    "title": "Groceries",
+    "amount": 1500,
+    "category": "Food",
+    "date": "2026-02-01",
+    "userId": "{{userId}}"
+  }
+}

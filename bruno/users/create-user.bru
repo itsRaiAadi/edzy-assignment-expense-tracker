@@ -1,0 +1,16 @@
+meta {
+  name: Create User
+  type: http
+}
+
+post {
+  url: http://localhost:5000/users
+}
+
+body {
+  json: {
+    "name": "Test User",
+    "email": "testuser@example.com",
+    "monthlyBudget": 20000
+  }
+}
