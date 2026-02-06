@@ -2,38 +2,37 @@
 
 A backend service built with **Node.js, Express.js, MongoDB Atlas, and Mongoose** to track users’ monthly expenses and budgets.
 
-This project was developed as part of a Backend Screening Task to demonstrate:
+This project was developed as part of a **Backend Screening Task** to demonstrate:
 
-* MongoDB schema design
-* Mongoose relationships & middleware
-* Aggregations
-* Clean API development
+- MongoDB schema design
+- Mongoose relationships & middleware
+- Aggregations
+- Clean API development
 
 ---
 
 ## 🚀 Features
 
-* Create users with a monthly budget
-* Add expenses linked to a specific user
-* Fetch all expenses for a user
-* Monthly expense summary:
-
-  * Total expenses
-  * Remaining budget
-  * Number of expenses
-* Pagination & category filtering
-* Proper validations & error handling
+- Create users with a monthly budget
+- Add expenses linked to a specific user
+- Fetch all expenses for a user
+- Monthly expense summary:
+  - Total expenses
+  - Remaining budget
+  - Number of expenses
+- Pagination & category filtering
+- Proper validations & error handling
 
 ---
 
 ## 🛠 Tech Stack
 
-* Node.js
-* Express.js
-* MongoDB Atlas
-* Mongoose
-* ES Modules (`import/export`)
-* dotenv
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- ES Modules (`import/export`)
+- dotenv
 
 > ❌ Local MongoDB is *not* used
 
@@ -42,15 +41,24 @@ This project was developed as part of a Backend Screening Task to demonstrate:
 ## 📂 Project Structure
 
 ```
-src/
- ├── config/        # Database connection
- ├── models/        # Mongoose schemas
- ├── controllers/   # Business logic
- ├── routes/        # API routes
- ├── utils/         # Helpers & error handling
- ├── app.js
- └── server.js
-```
+
+.
+├── bruno/              # Bruno API collection
+│   ├── users/
+│   └── expenses/
+├── src/
+│   ├── config/        # Database connection
+│   ├── models/        # Mongoose schemas
+│   ├── controllers/   # Business logic
+│   ├── routes/        # API routes
+│   ├── utils/         # Helpers & error handling
+│   ├── app.js
+│   └── server.js
+├── .gitignore
+├── README.md
+├── package.json
+
+````
 
 ---
 
@@ -61,7 +69,7 @@ src/
 ```bash
 git clone <your-github-repo-url>
 cd expense-tracker-backend
-```
+````
 
 ---
 
@@ -97,6 +105,38 @@ Server will run on:
 ```
 http://localhost:5000
 ```
+
+---
+
+## 🧪 API Testing Using Bruno
+
+This repository includes a **Bruno collection** for easy API testing and faster evaluation.
+
+### How to use Bruno:
+
+1. Download Bruno
+   👉 [https://www.usebruno.com/](https://www.usebruno.com/)
+
+2. Open Bruno and choose **Open Collection**
+
+3. Select the `bruno/` folder from the repository root
+
+4. Start the backend server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Use the APIs in the following order:
+
+   * **Create User**
+   * Copy the returned `userId.`
+   * Set `userId` in Bruno Environment
+   * Add Expense
+   * Fetch Expenses
+   * Fetch Monthly Summary
+
+All routes are prefilled with sample request bodies for quick and easy testing.
 
 ---
 
@@ -218,7 +258,9 @@ Example:
 * Pagination & filtering
 * Clean utilities
 * ES Module architecture
+* Bruno collection for API testing
 
+---
 
 ## 👨‍💻 Author
 
@@ -228,4 +270,4 @@ Backend Developer
 * GitHub: [https://github.com/itsRaiAadi](https://github.com/itsRaiAadi)
 * LinkedIn: [https://www.linkedin.com/in/aditya-rai-795bb8371/](https://www.linkedin.com/in/aditya-rai-795bb8371/)
 
-
+You’re finishing this very strong 💪
